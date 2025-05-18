@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+     #sec{background-color: rgb(130, 158, 211); 
+         width: 300px;
+         height: 300px;
+         border-radius: 20px;
+         margin-top: 150px;
+
+    }
+    input{
+        width: 250px;
+        height: 35px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        margin-top: 20px;
+        
+    }
+    button{
+        width: 150px;
+        height: 40px;
+        border-radius:10px ;
+        margin-top: 20px;
+        border: none;
+        background-color: palevioletred;
+        color: white;
+        font-size: larger;
+        
+    }
+     button p {
+        margin-top: 7px;
+
+     } 
+     button:hover{
+        background-color: rgb(48, 137, 182);
+        cursor: pointer;
+     }   
+    
+
+    </style>
+</head>
+<body>
+    <center>
+    <div id="sec">
+
+    <input type="text" name="" id="foo1" placeholder="enter your email"> <br><br>
+    <input type="password" name="" id="foo2" placeholder="enter your password"> <br><br>
+    <button onclick="log()"><p>Login In</p></button>
+</div>
+
+</center>
+
+
+    <script>
+
+        function log(){
+       let email = "ghani@gmail.com"
+       let password = 1234
+    let text = document.getElementById("foo1").value;
+    let word = document.getElementById("foo2").value;
+ 
+    let textInput = document.getElementById("foo1") 
+    let passInput = document.getElementById("foo2") 
+    
+
+
+if(text == "" || word == ""){
+    alert("Please enter detail")
+}else if(text == email && word == password){
+    alert("Login Successful");
+}else{
+        alert("password incorrect");
+    }
+   }
+   
+
+
+    </script>
+
+
+
+
+</body>
+</html>
